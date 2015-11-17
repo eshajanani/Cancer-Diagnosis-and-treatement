@@ -1,0 +1,1316 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cancer-treatment "http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cancer-treatment="http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#">
+    <Ontology rdf:about="http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#hasDrug -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;hasDrug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#hasSymptom -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;hasSymptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#hasTests -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;hasTests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#hasTreatment -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;hasTreatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#isDrugFor -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;isDrugFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#isSymptomFor -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;isSymptomFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#isTestTaken -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;isTestTaken"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#offers -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;offers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#willCause -->
+
+    <ObjectProperty rdf:about="&cancer-treatment;willCause"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Cancer_Type -->
+
+    <Class rdf:about="&cancer-treatment;Cancer_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Causes -->
+
+    <Class rdf:about="&cancer-treatment;Causes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Diagnosis -->
+
+    <Class rdf:about="&cancer-treatment;Diagnosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Drugs -->
+
+    <Class rdf:about="&cancer-treatment;Drugs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Hospitals -->
+
+    <Class rdf:about="&cancer-treatment;Hospitals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Symptom -->
+
+    <Class rdf:about="&cancer-treatment;Symptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Treatments -->
+
+    <Class rdf:about="&cancer-treatment;Treatments"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Abdominal_Pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Abdominal_Pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Abdominal_swelling -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Abdominal_swelling">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Alcohol -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Alcohol">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Breast_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Aldesleukin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Aldesleukin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Melanoma"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Skin_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Allen_Hospital -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Allen_Hospital">
+        <rdf:type rdf:resource="&cancer-treatment;Hospitals"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Embolization"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Endoscopic"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Surgery"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Anal_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Anal_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Itching"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Rectal_bleeding"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Anastrozole -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Anastrozole">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Breast_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Axitinib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Axitinib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bevacizumab -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bevacizumab">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Cervical_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Ovarian_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Biopsy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Biopsy">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bladder_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bladder_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Blood_in_Urine"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Cough"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;MRI"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Ultrasound"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Urinalysis"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Urine_Cytology"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bleomycin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bleomycin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Cervical_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Blood_Pressure -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Blood_Pressure">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Blood_Tests -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Blood_Tests">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Blood_in_Urine -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Blood_in_Urine">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bone_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bone_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Bone_Pain"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;MRI"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;XRays"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bone_Pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bone_Pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Breast_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Breast_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Hormone_Therapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Lump_in_the_breast"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Mammography"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Nipple_discharge"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Ultrasound"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Breast_Change -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Breast_Change">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Breast_Pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Breast_Pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Bump_on_the_skin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Bump_on_the_skin">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#CT_Scan -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;CT_Scan">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Carboplatin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Carboplatin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Ceritinib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Ceritinib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Cervical_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Cervical_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Blood_in_Urine"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Pelvic_Pain"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Change_of_voice -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Change_of_voice">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Chemotherapy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Chemotherapy">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Chest_Pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Chest_Pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Cisplatin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Cisplatin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Cervical_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Colon_Rectal_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Colon_Rectal_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Abdominal_Pain"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Colonoscopy"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Shortness_of_breath"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Weight_Loss"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;XRays"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Colonoscopy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Colonoscopy">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Confusion -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Confusion">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Coppell_Hospital -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Coppell_Hospital">
+        <rdf:type rdf:resource="&cancer-treatment;Hospitals"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Immunotherapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Lasers"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Targeted_Therapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Transplantation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Cough -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Cough">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Crizotinib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Crizotinib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Cyclophosphamide -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Cyclophosphamide">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Ovarian_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Dabrafenib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Dabrafenib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Melanoma"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Skin_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Denosumab -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Denosumab">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Bone_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Diabetes -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Diabetes">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Eating_Disorder -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Eating_Disorder">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Embolization -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Embolization">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Endometrial_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Endometrial_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Endoscopic -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Endoscopic">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Erlotinib_Hydrochloride -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Erlotinib_Hydrochloride">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Pancreatic_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Everolimus -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Everolimus">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Fair_Skin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Fair_Skin">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Melanoma"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Family_History -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Family_History">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Bone_Cancer"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Melanoma"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Thyroid_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Feeling_Weak -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Feeling_Weak">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Fever -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Fever">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Fluorouracil -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Fluorouracil">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Pancreatic_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#HPV -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;HPV">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Anal_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Headache -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Headache">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Heart_attack -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Heart_attack">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#High_Fat_Intake -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;High_Fat_Intake">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Hormone_Therapy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Hormone_Therapy">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Immunotherapy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Immunotherapy">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Ipilimumab -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Ipilimumab">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Melanoma"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Skin_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Irinotecan_Hydrochloride -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Irinotecan_Hydrochloride">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Irregular_moles -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Irregular_moles">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Melanoma"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Irving_Hospital -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Irving_Hospital">
+        <rdf:type rdf:resource="&cancer-treatment;Hospitals"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Embolization"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Lasers"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Surgery"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Vaccines"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Itching -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Itching">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Kidney_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Kidney_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Blood_Tests"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Embolization"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Feeling_Weak"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Fever"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Ultrasound"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Urinalysis"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Weight_Loss"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Lasers -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Lasers">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Leg_swelling -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Leg_swelling">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;PET_Scan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Leukemia -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Leukemia">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Biopsy"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Blood_Tests"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Confusion"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Eating_Disorder"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Feeling_Weak"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Headache"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Night_Sweats"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Targeted_Therapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Vomiting"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Weight_Loss"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Light_hair -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Light_hair">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Melanoma"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Lump_in_the_breast -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Lump_in_the_breast">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Lung_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Lung_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Chest_Pain"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Cough"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;MRI"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;PET_Scan"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Shortness_of_breath"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Wheezing"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;XRays"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#MRI -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;MRI">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Mammography -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Mammography">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#McKinney_Hospital -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;McKinney_Hospital">
+        <rdf:type rdf:resource="&cancer-treatment;Hospitals"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Embolization"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Endoscopic"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Hormone_Therapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Immunotherapy"/>
+        <cancer-treatment:offers rdf:resource="&cancer-treatment;Lasers"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Megestrol_Acetate -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Megestrol_Acetate">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Endometrial_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Melanoma -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Melanoma">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Biopsy"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Skin_Change"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Methotrexate -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Methotrexate">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Bone_Cancer"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Mitomycin_C -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Mitomycin_C">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Pancreatic_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Nausea -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Nausea">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Neck_pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Neck_pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Night_Sweats -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Night_Sweats">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Nipple_discharge -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Nipple_discharge">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Nivolumab -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Nivolumab">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Melanoma"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Nuclear_Scan -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Nuclear_Scan">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Obseity -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Obseity">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Breast_Cancer"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Olaparib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Olaparib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Ovarian_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Ovarian_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Ovarian_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Abdominal_Pain"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Abdominal_swelling"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Leg_swelling"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;PET_Scan"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Shortness_of_breath"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Oxaliplatin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Oxaliplatin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Colon_Rectal_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#PET_Scan -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;PET_Scan">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Painful_Urination -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Painful_Urination">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Pancreatic_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Pancreatic_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Endoscopic"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Nausea"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Ultrasound"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Vomiting"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Weight_Loss"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Pelvic_Pain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Pelvic_Pain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Platinol_Cisplatin -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Platinol_Cisplatin">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Radiation_Therapy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Radiation_Therapy">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Raloxifene_Hydrochloride -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Raloxifene_Hydrochloride">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Breast_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Rectal_bleeding -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Rectal_bleeding">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Shortness_of_breath -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Shortness_of_breath">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Skin_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Skin_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Biopsy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Bump_on_the_skin"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Surgery"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Skin_Change -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Skin_Change">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Smoking -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Smoking">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Anal_Cancer"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Sorafenib_Tosylate -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Sorafenib_Tosylate">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Leukemia"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Stroke -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Stroke">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Sunitinib_Malate -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Sunitinib_Malate">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Pancreatic_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Surgery -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Surgery">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Tamoxifen_Citrate -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Tamoxifen_Citrate">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Breast_Change"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Targeted_Therapy -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Targeted_Therapy">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Temsirolimus -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Temsirolimus">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Kidney_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Thiotepa -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Thiotepa">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Bladder_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Thyroid_Cancer -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Thyroid_Cancer">
+        <rdf:type rdf:resource="&cancer-treatment;Cancer_Type"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;CT_Scan"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Change_of_voice"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Chemotherapy"/>
+        <cancer-treatment:hasSymptom rdf:resource="&cancer-treatment;Neck_pain"/>
+        <cancer-treatment:hasTreatment rdf:resource="&cancer-treatment;Radiation_Therapy"/>
+        <cancer-treatment:hasTests rdf:resource="&cancer-treatment;Ultrasound"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Tobacco -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Tobacco">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Lung_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Topotecan_Hydrochloride -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Topotecan_Hydrochloride">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Cervical_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Trametinib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Trametinib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Skin_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Transplantation -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Transplantation">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Ultrasound -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Ultrasound">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Uncontrolled_cell_growth -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Uncontrolled_cell_growth">
+        <rdf:type rdf:resource="&cancer-treatment;Causes"/>
+        <cancer-treatment:willCause rdf:resource="&cancer-treatment;Skin_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Urinalysis -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Urinalysis">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Urine_Cytology -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Urine_Cytology">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Urine_Poblem -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Urine_Poblem">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Vaccines -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Vaccines">
+        <rdf:type rdf:resource="&cancer-treatment;Treatments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Vaginal_Bleeding -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Vaginal_Bleeding">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Vandetanib -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Vandetanib">
+        <rdf:type rdf:resource="&cancer-treatment;Drugs"/>
+        <cancer-treatment:isDrugFor rdf:resource="&cancer-treatment;Thyroid_Cancer"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Vomiting -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Vomiting">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Weight_Gain -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Weight_Gain">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Weight_Loss -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Weight_Loss">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#Wheezing -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;Wheezing">
+        <rdf:type rdf:resource="&cancer-treatment;Symptom"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/janani/ontologies/2015/3/cancer-treatment#XRays -->
+
+    <NamedIndividual rdf:about="&cancer-treatment;XRays">
+        <rdf:type rdf:resource="&cancer-treatment;Diagnosis"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
